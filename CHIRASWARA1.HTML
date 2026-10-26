@@ -1,0 +1,331 @@
+```html
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>චිරස්වර | CHIRASWARA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Abhaya Libre', serif;
+            background: #100b18;
+            color: white;
+        }
+
+        header {
+            background: #1b1128;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #d9b45b;
+        }
+
+        header h2 {
+            color: #e8c66c;
+            font-size: 24px;
+        }
+
+        nav {
+            background: #241631;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #e8c66c;
+        }
+
+        .hero {
+            min-height: 480px;
+            padding: 80px 20px;
+            text-align: center;
+            background:
+                linear-gradient(#100b18cc, #100b18ee),
+                radial-gradient(circle at top, #663b86, #100b18 70%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero h1 {
+            color: #f3d17b;
+            font-size: clamp(55px, 12vw, 100px);
+            margin-bottom: 10px;
+        }
+
+        .hero h2 {
+            font-family: Arial, sans-serif;
+            letter-spacing: 6px;
+            font-size: 28px;
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d9b45b;
+            color: #160e20;
+            padding: 13px 28px;
+            margin: 8px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        section {
+            padding: 55px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #e8c66c;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: #21172d;
+            border: 1px solid #614879;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .card h3 {
+            color: #f3d17b;
+            font-size: 25px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .form-box {
+            max-width: 500px;
+            margin: auto;
+            background: #21172d;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            border: 1px solid #6b5480;
+            border-radius: 8px;
+            background: #130e1b;
+            color: white;
+            font-size: 16px;
+        }
+
+        .message {
+            margin-top: 15px;
+            color: #f3d17b;
+            font-size: 18px;
+        }
+
+        footer {
+            background: #09060e;
+            padding: 25px;
+            text-align: center;
+            border-top: 2px solid #d9b45b;
+            color: #ddd;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 7px;
+                font-size: 16px;
+            }
+
+            .hero {
+                min-height: 400px;
+            }
+
+            section {
+                padding: 40px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>Sudarshana Sri Dansing Academy</h2>
+</header>
+
+<nav>
+    <a href="#home">මුල් පිටුව</a>
+    <a href="#about">විස්තර</a>
+    <a href="#categories">තරග අංශ</a>
+    <a href="#register">ලියාපදිංචිය</a>
+    <a href="#contact">සම්බන්ධ වන්න</a>
+</nav>
+
+<div class="hero" id="home">
+    <h1>චිරස්වර</h1>
+    <h2>CHIRASWARA</h2>
+    <p>සංගීතය • ගායනය • ඔබේ දක්ෂතාවය</p>
+    <p>Sudarshana Sri Dansing Academy ඉදිරිපත් කිරීමකි</p>
+    <a class="btn" href="#register">දැන් ලියාපදිංචි වන්න</a>
+</div>
+
+<section id="about">
+    <h2>චිරස්වර ගැන</h2>
+    <p style="font-size:20px; max-width:750px; margin:auto;">
+        ඔබගේ ගායන දක්ෂතාවය ලොවට පෙන්වන්න.
+        සංගීතය තුළින් ඔබගේ සිහිනය සැබෑ කරගන්න.
+        චිරස්වර සංගීත තරගාවලියට ඔබත් එක්වන්න.
+    </p>
+</section>
+
+<section id="categories">
+    <h2>තරග අංශ</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>තරග අංශය 01</h3>
+            <p>පළමු තරග අංශය සඳහා ලියාපදිංචි වන්න.</p>
+            <a class="btn" href="#register" onclick="selectCategory('තරග අංශය 01')">
+                ලියාපදිංචි වන්න
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>තරග අංශය 02</h3>
+            <p>දෙවන තරග අංශය සඳහා ලියාපදිංචි වන්න.</p>
+            <a class="btn" href="#register" onclick="selectCategory('තරග අංශය 02')">
+                ලියාපදිංචි වන්න
+            </a>
+        </div>
+    </div>
+</section>
+
+<section id="register">
+    <h2>තරගකරුවන්ගේ ලියාපදිංචිය</h2>
+
+    <div class="form-box">
+        <form id="registrationForm">
+            <input type="text" id="name"
+                   placeholder="සම්පූර්ණ නම" required>
+
+            <input type="number" id="age"
+                   placeholder="වයස" min="1" max="120" required>
+
+            <input type="tel" id="phone"
+                   placeholder="දුරකථන අංකය" required>
+
+            <input type="email" id="email"
+                   placeholder="Email ලිපිනය">
+
+            <select id="category" required>
+                <option value="">තරග අංශය තෝරන්න</option>
+                <option value="තරග අංශය 01">තරග අංශය 01</option>
+                <option value="තරග අංශය 02">තරග අංශය 02</option>
+            </select>
+
+            <input type="text" id="song"
+                   placeholder="ගීතයේ නම">
+
+            <label style="display:block;text-align:left;">
+                <input type="checkbox" id="agreement"
+                       required style="width:auto;">
+                තරග කොන්දේසි කියවා එකඟ වෙමි.
+            </label>
+
+            <button class="btn" type="submit">
+                ලියාපදිංචි වන්න
+            </button>
+        </form>
+
+        <div class="message" id="message"></div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>සම්බන්ධ වන්න</h2>
+    <p style="font-size:20px;">
+        Sudarshana Sri Dansing Academy
+    </p>
+    <p style="margin-top:10px;">
+        වැඩි විස්තර සඳහා සංවිධායක මණ්ඩලය අමතන්න.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 CHIRASWARA</p>
+    <p>Sudarshana Sri Dansing Academy</p>
+    <p>සංගීතයෙන් හදවත් යා කරන ගමනක්</p>
+</footer>
+
+<script>
+    function selectCategory(category) {
+        document.getElementById("category").value = category;
+    }
+
+    document.getElementById("registrationForm")
+        .addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const category = document.getElementById("category").value;
+            const agreement = document.getElementById("agreement").checked;
+
+            if (!name || !phone || !category || !agreement) {
+                document.getElementById("message").textContent =
+                    "කරුණාකර අවශ්‍ය සියලු තොරතුරු සම්පූර්ණ කරන්න.";
+                return;
+            }
+
+            document.getElementById("message").textContent =
+                "ස්තුතියි " + name +
+                "! ඔබගේ තොරතුරු පරීක්ෂණය සඳහා ඇතුළත් කළා. " +
+                "මෙම demo එකෙන් දත්ත server එකකට යවන්නේ නැත.";
+
+            this.reset();
+        });
+</script>
+
+</body>
+</html>
+```
